@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "282237403878",
+    "project_id": "vnnotes2023",
+    "storage_bucket": "vnnotes2023.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282237403878:android:ac8dc0d27a0361a482b127",
+        "android_client_info": {
+          "package_name": "com.example.vnnotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "282237403878-1vl6j3rqksuveuuirqvd1mi1g5sigqio.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8s7Zp6_7lWMXv5r783Tb3w2mGXfHveJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "282237403878-1vl6j3rqksuveuuirqvd1mi1g5sigqio.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
