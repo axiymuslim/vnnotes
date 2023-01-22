@@ -1,4 +1,4 @@
-// ignore_for_file: avoid_print, unused_import, prefer_const_constructors
+// ignore_for_file: avoid_print, unused_import, prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -36,16 +36,40 @@ class HomePage extends StatelessWidget {
             case ConnectionState.done:
               final user = FirebaseAuth.instance.currentUser;
               if (user?.emailVerified ?? false) {
-                print('Verified');
+                return const Text('done');
               } else {
-                print('Not verified');
+                return VerifyEmailView();
               }
-              return const Text('done');
             default:
               return const Text('loading');
           }
         },
       ),
+    );
+  }
+}
+
+class VerifyEmailView extends StatefulWidget {
+  const VerifyEmailView({super.key});
+
+  @override
+  State<VerifyEmailView> createState() => _VerifyEmailViewState();
+}
+
+class _VerifyEmailViewState extends State<VerifyEmailView> {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Text('Verify your email adress'),
+        TextButton(
+          onPressed: () async {
+            final user = FirebaseAuth.instance.currentUser;
+            await user?.sendEmailVerification();
+          },
+          child: Text('Send email verification'),
+        ),
+      ],
     );
   }
 }
