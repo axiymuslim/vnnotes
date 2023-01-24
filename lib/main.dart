@@ -1,4 +1,4 @@
-// ignore_for_file: avoid_print, unused_import, prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file:  unused_import, prefer_const_constructors, prefer_const_literals_to_create_immutables
 import 'dart:developer' as devtools show log;
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -21,6 +21,7 @@ void main() {
       routes: {
         '/login/': (context) => LoginView(),
         '/register/': (context) => RegisterView(),
+        '/notes/': (context) => NotesView()
       },
     ),
   );
