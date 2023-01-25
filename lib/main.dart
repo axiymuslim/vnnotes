@@ -22,12 +22,8 @@ void main() {
       routes: {
         loginRoute: (context) => LoginView(),
         registerRoute: (context) => RegisterView(),
-<<<<<<< HEAD
         notesRoute: (context) => NotesView(),
         veriifyEmailRoute: (context) => VerifyEmailView()
-=======
-        notesRoute: (context) => NotesView()
->>>>>>> 87f639c207523860adfb321f403a8161d03ffe3f
       },
     ),
   );
