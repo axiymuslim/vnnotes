@@ -3,7 +3,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:vnnotes/constatnts/routes.dart';
+import 'package:vnnotes/constants/routes.dart';
 import 'dart:developer' as devtools show log;
 import '../firebase_options.dart';
 import '../utilities/showErrorDialog.dart';
